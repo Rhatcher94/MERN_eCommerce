@@ -33,8 +33,8 @@ const addAppointment = asyncHandler(async (req, res) => {
  * @access Private
  */
 const getAvailableAppointments = asyncHandler(async (req, res) => {
-	const {date} = req.body
-	let times = await getAvailableTimes({year: date.year, month: date.month, day: date.day}, 1)
+	const {date, length} = req.body
+	let times = await getAvailableTimes({year: date.year, month: date.month, day: date.day}, length)
 	res.json(times)
 })
 

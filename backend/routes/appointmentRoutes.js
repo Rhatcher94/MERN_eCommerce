@@ -4,6 +4,6 @@ import {getAvailableAppointments, addAppointment} from '../controllers/appointme
 import {protect, admin} from '../middleware/authMiddleware.js'
 
 router.route('/').get(protect, admin, getAvailableAppointments).post(protect, addAppointment)
-router.route('/available').get(protect, getAvailableAppointments)
+router.route('/available').post(protect, getAvailableAppointments)
 
 export default router
