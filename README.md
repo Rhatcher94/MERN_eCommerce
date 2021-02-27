@@ -14,7 +14,7 @@ An eCommerce web application created with the MERN stack + redux.
   The front end was created using bootstrap, react, redux and react-router. 
   
   **Update** 
-  Current work being done it on update the app to be reusable as a template for creating ecommerce stores. 
+  Current work being done is on updating the app to be reusable as a template for creating ecommerce stores. 
   Adding global settings that can be changed which determine which modules of the app are used on creation. Ex. An appointment module for stores requiring schedules. 
   
 
